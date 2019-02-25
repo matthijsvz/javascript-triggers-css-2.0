@@ -1,0 +1,49 @@
+body {
+  background-color: #9eff77;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr, auto, auto, 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+  overflow-x: hidden;
+}
+#knop {
+  text-align: center;
+  grid-column: 2/3;
+  position: absolute;
+  left: 697px;
+  background-color: #42d1f4;
+  border: none;
+  color: white;
+  padding: 1px 32px;;
+  font-size: 16px;
+
+}
+.blok {
+  opacity: 0;
+  grid-column: 3/4;
+  background-color: pink;
+  width: 10em;
+  height: 10em;
+  border-radius: 25px;
+  transition: transform .6s ease-out;
+}
+
+.blok:nth-child(1) {
+  transition: opacity 2.5s ease-in-out;
+}
+
+.blok:nth-child(2) {
+  transition: opacity 3s ease-in-out;
+}
+
+.blok:nth-child(3) {
+  transition: opacity 1.5s ease-in-out;
+}
+
+
+.blok--schuif-uit {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
